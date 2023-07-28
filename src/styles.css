@@ -1,0 +1,425 @@
+/* CreateMoviePage.css */
+
+.create-movie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.create-movie-form {
+    max-width: 600px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-movie-form h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.btn-create {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-create:hover {
+    background-color: #0056b3;
+}
+
+
+/* CreateGenrePage.css */
+
+.create-genre-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.create-genre-form {
+    max-width: 400px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-genre-form h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.btn-create {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-create:hover {
+    background-color: #0056b3;
+}
+
+.btn-reset {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-reset:hover {
+    background-color: #d32f2f;
+}
+
+
+/* MoviePage.css */
+
+.movie-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.movie-list {
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+.movie-list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.movie-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.movie-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.movie-thumbnail img {
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.movie-info {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.movie-actions button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.movie-actions button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.movie-details-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.movie-details {
+    max-width: 800px;
+    /* Aumentamos el ancho del componente de edición */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    /* Para que el botón de cerrar (x) se posicione correctamente */
+}
+
+.movie-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.movie-details .movie-thumbnail img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.movie-details .movie-info {
+    margin-top: 20px;
+}
+
+
+/* Agregamos estilos para el botón de cerrar (x) */
+
+.movie-details .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.movie-details .close-button:hover {
+    color: #555;
+}
+
+
+/* Estilos para los inputs de edición */
+
+.movie-details input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.movie-details input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+
+/* Estilos para el botón de guardar cambios */
+
+.movie-details button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.movie-details button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos para el dropdown de géneros */
+
+.movie-details select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.movie-details select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+
+/* Estilos para el textarea de descripción */
+
+.movie-details textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+.movie-details textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+
+/* SearchBar.css */
+
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+
+/* GenreList.css */
+
+.genre-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.genre-table {
+    list-style: none;
+    padding: 0;
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    /* Para eliminar espacios entre las celdas */
+}
+
+.genre-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.genre-name {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.delete-button {
+    padding: 8px 15px;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
